@@ -12,11 +12,12 @@ const others = [
 ]
 
 const us = [
-  'Stack enfocado: Databricks + Fabric',
-  'Proyecto end-to-end (RetailPe) real',
-  'Profundidad de nivel producción',
-  'Ciclo de vida completo de Data Engineering',
-  'Arquitectura Medallion desde cero',
+  'Patrones de diseño: metadata-driven, idempotencia, SCD Tipo 2',
+  'Streaming de datos con Structured Streaming en producción',
+  'Buenas prácticas desde el día 1: CI/CD, DABs y DevOps real',
+  'IA sobre el Lakehouse: RAG + Genie Spaces',
+  'Microsoft Fabric end-to-end (no solo teoría)',
+  'Proyecto integrador con sentido de negocio real',
 ]
 
 function AnimatedSection({ children, delay = 0 }) {
@@ -57,7 +58,7 @@ export default function Problem() {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-6 items-stretch">
+        <div className="grid md:grid-cols-[1fr_auto_1fr] gap-6 items-stretch">
           {/* Others column */}
           <AnimatedSection delay={0.1}>
             <div className="h-full rounded-2xl border border-red-500/20 bg-red-500/5 p-6">

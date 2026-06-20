@@ -3,6 +3,7 @@ import { Clock, Users, Calendar, Mic, ArrowRight, ChevronDown } from 'lucide-rea
 import databricksImg from '../assets/logos/databricks.png'
 import fabricImg from '../assets/logos/fabric.png'
 import azureImg from '../assets/logos/azure.png'
+import logoImg from '../assets/datawizard.png'
 
 const CTA_URL = 'https://lu.ma/datawizard'
 
@@ -180,18 +181,18 @@ export default function Hero() {
         {/* Brand badge */}
         <motion.div
           custom={0} variants={fadeUp} initial="hidden" animate="show"
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00A3FF]/30 bg-[#00A3FF]/8 text-[#00A3FF] text-sm font-semibold mb-5 tracking-wide"
+          className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-[#00A3FF]/30 bg-[#00A3FF]/8 text-[#00A3FF] text-base font-semibold mb-6 tracking-wide"
         >
-          <span className="w-2 h-2 rounded-full bg-[#00A3FF] animate-pulse" />
+          <img src={logoImg} alt="Data Wizard" className="w-5 h-5 object-contain" />
           DATA WIZARD ACADEMY
         </motion.div>
 
         {/* Main heading */}
         <motion.div custom={1} variants={fadeUp} initial="hidden" animate="show" className="mb-2">
-          <p className="text-slate-400 text-sm font-medium uppercase tracking-[0.2em] mb-1">
+          <p className="text-slate-400 text-base font-medium uppercase tracking-[0.2em] mb-2">
             Especialización en
           </p>
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[82px] font-black text-white leading-[0.9] tracking-tighter">
+          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[96px] font-black text-white leading-[0.9] tracking-tighter">
             DATA
             <br />
             <span className="gradient-text">ENGINEERING</span>
