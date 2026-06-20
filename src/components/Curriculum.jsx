@@ -56,8 +56,8 @@ const modules = [
       { n: 12, title: 'CDC: conceptos y con Debezium + Kafka',             type: 'Teoría + Demo' },
       { n: 13, title: 'Autoloader y diseño de la zona Bronze',             type: 'Práctica' },
       { n: 14, title: 'Metadata-driven Ingestion',                         type: 'Teoría + Práctica' },
-      { n: 15, title: 'Claude Code para Data Engineering',                 type: 'Práctica' },
-      { n: 16, title: 'Asset Bundles (DABs)',                              type: 'Teoría + Práctica' },
+      { n: 15, title: 'Desarrollo asistido por IA: Claude Code, Genie Code y Spec-Driven Development', type: 'Práctica + Demo', note: 'Método SDD que se aplica en todas las sesiones de construcción posteriores' },
+      { n: 16, title: 'Jobs, Workflows y Asset Bundles (DABs)',            type: 'Teoría + Práctica' },
     ],
   },
   {
@@ -94,12 +94,11 @@ const modules = [
     icon: Shield,
     color: GOLD,
     tag: 'Módulo 5',
-    title: 'Gobierno, Seguridad y CI/CD',
-    sessionCount: 3,
+    title: 'Unity Catalog y Gobierno',
+    sessionCount: 2,
     sessions: [
-      { n: 23, title: 'Unity Catalog: gobierno profundo y linaje',         type: 'Teoría + Práctica' },
-      { n: 24, title: 'Secretos Key Vault y configuración segura',         type: 'Práctica' },
-      { n: 25, title: 'CI/CD y gestión de ambientes (DEV/STG/PROD)',       type: 'Teoría + Práctica' },
+      { n: 23, title: 'Unity Catalog: gobierno, linaje y configuración segura', type: 'Teoría + Práctica', note: 'Grants, Row/Column security, linaje automático + Key Vault y Secret Scopes' },
+      { n: 24, title: 'CI/CD y gestión de ambientes (DEV/STG/PROD)',            type: 'Teoría + Práctica', note: 'Branching strategy, GitHub Actions, promoción automatizada con Asset Bundles' },
     ],
   },
   {
@@ -111,7 +110,7 @@ const modules = [
     title: 'IA sobre el Lakehouse — Genie y RAG',
     sessionCount: 1,
     sessions: [
-      { n: 26, title: 'Genie, RAG y Vector Search sobre el Lakehouse',    type: 'Demo + Práctica' },
+      { n: 25, title: 'IA sobre el Lakehouse: Genie Spaces y RAG (conceptual)', type: 'Demo + Práctica', note: 'Genie Space sobre tablas Gold, Vector Search, embeddings a nivel conceptual' },
     ],
   },
 
@@ -207,8 +206,8 @@ const modules = [
     title: 'Integración Databricks + Fabric & Proyecto RetailPe',
     sessionCount: 2,
     sessions: [
-      { n: 27, title: 'Databricks y Fabric: posicionamiento e integración',       type: 'Teoría + Demo', note: 'Delta Sharing, Shortcuts y Mirroring' },
-      { n: 28, title: 'Proyecto final y defensa de arquitectura RetailPe',        type: 'Evaluación + Demo', note: 'Portafolio listo para entrevistas' },
+      { n: 26, title: 'Databricks y Fabric: posicionamiento e integración',       type: 'Teoría + Demo', note: 'Delta Sharing, Shortcuts y Mirroring desde Fabric' },
+      { n: '—', title: 'Proyecto final y defensa de arquitectura RetailPe',       type: 'Evaluación + Demo', note: 'Portafolio listo para entrevistas' },
     ],
   },
 ]
