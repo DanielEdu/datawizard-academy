@@ -181,9 +181,9 @@ export default function Hero() {
         {/* Brand badge */}
         <motion.div
           custom={0} variants={fadeUp} initial="hidden" animate="show"
-          className="inline-flex items-center gap-2.5 px-5 py-2 rounded-full border border-[#00A3FF]/30 bg-[#00A3FF]/8 text-[#00A3FF] text-base font-semibold mb-6 tracking-wide"
+          className="inline-flex items-center gap-3 px-6 py-2.5 rounded-full border border-[#00A3FF]/30 bg-[#00A3FF]/8 text-[#00A3FF] text-lg font-semibold mb-6 tracking-wide"
         >
-          <img src={logoImg} alt="Data Wizard" className="w-5 h-5 object-contain" />
+          <img src={logoImg} alt="Data Wizard" className="w-6 h-6 object-contain" />
           DATA WIZARD ACADEMY
         </motion.div>
 

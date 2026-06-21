@@ -65,7 +65,7 @@ export default function Pricing() {
             {/* Inicio de clases */}
             <div className="flex items-center gap-2 mb-6 px-4 py-2.5 rounded-xl bg-[#7B2FBE]/10 border border-[#7B2FBE]/25 w-fit">
               <span className="text-lg">📅</span>
-              <span className="text-slate-200 text-sm font-medium">Inicio de clases: <span className="text-white font-bold">1 de agosto, 2025</span></span>
+              <span className="text-slate-200 text-base font-medium">Inicio de clases: <span className="text-white font-bold">1 de agosto, 2026</span></span>
             </div>
 
             {/* Price */}
