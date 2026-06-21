@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
-const CTA_URL = 'https://lu.ma/datawizard'
+const CTA_URL = 'https://tally.so/r/b5g4d6'
 
 export default function CTAFinal() {
   const ref = useRef(null)

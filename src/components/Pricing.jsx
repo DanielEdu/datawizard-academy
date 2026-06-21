@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Check, ArrowRight, Zap } from 'lucide-react'
 
-const CTA_URL = 'https://lu.ma/datawizard'
+const CTA_URL = 'https://tally.so/r/b5g4d6'
 
 const includes = [
   '44 sesiones en vivo (132 horas reales de formación)',
@@ -109,6 +109,39 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Payment methods */}
+            <div className="mb-8">
+              <p className="text-slate-400 text-xs uppercase tracking-widest mb-4 font-semibold">
+                Métodos de pago
+              </p>
+              <div className="grid grid-cols-2 gap-3">
+                {/* Internacional */}
+                <div className="rounded-xl border border-white/8 bg-white/3 p-3">
+                  <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-2">🌎 Internacional</p>
+                  <div className="flex flex-col gap-1.5">
+                    <span className="flex items-center gap-2 text-slate-300 text-xs">
+                      <span className="text-base">💳</span> Visa / Mastercard
+                    </span>
+                    <span className="flex items-center gap-2 text-slate-300 text-xs">
+                      <span className="text-base">🅿️</span> PayPal
+                    </span>
+                  </div>
+                </div>
+                {/* Perú */}
+                <div className="rounded-xl border border-white/8 bg-white/3 p-3">
+                  <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-2">🇵🇪 Perú</p>
+                  <div className="flex flex-col gap-1.5">
+                    <span className="flex items-center gap-2 text-slate-300 text-xs">
+                      <span className="text-base">🏦</span> BCP · BBVA
+                    </span>
+                    <span className="flex items-center gap-2 text-slate-300 text-xs">
+                      <span className="text-base">📱</span> Yape
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* CTA */}

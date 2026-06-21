@@ -5,7 +5,7 @@ import fabricImg from '../assets/logos/fabric.png'
 import azureImg from '../assets/logos/azure.png'
 import logoImg from '../assets/datawizard.png'
 
-const CTA_URL = 'https://lu.ma/datawizard'
+const CTA_URL = 'https://tally.so/r/b5g4d6'
 
 const badges = [
   { icon: Calendar, value: '4',   label: 'meses',            color: '#F4B942' },
