@@ -214,11 +214,12 @@ const modules = [
     trackColor: GOLD,
     icon: BookOpen,
     color: GOLD,
-    tag: 'Proyecto Final',
-    title: 'Proyecto final y defensa de arquitectura RetailPe',
-    sessionCount: 1,
+    tag: 'Complementario',
+    title: 'Impulso profesional y cierre de cohorte',
+    sessionCount: 2,
     sessions: [
-      { n: '—', title: 'Defensa de arquitectura RetailPe end-to-end', type: 'Evaluación + Demo', note: 'Portafolio listo para entrevistas' },
+      { n: '—', title: 'Sesión 1:1 para impulsar tu perfil profesional', type: 'Mentoría', note: 'LinkedIn, CV técnico y estrategia de búsqueda' },
+      { n: '—', title: 'Networking en vivo: cierre de cohorte', type: 'Evento', note: 'Sesión grupal con egresados, comunidad y docentes' },
     ],
   },
 ]
@@ -417,7 +418,7 @@ export default function Curriculum() {
         </div>
 
         {/* Integration */}
-        <TrackHeader track="Integración y Proyecto Final" color={GOLD} count={2} />
+        <TrackHeader track="Complementario · Impulso Profesional" color={GOLD} count={2} />
         <div className="space-y-2">
           {integrationModules.map((mod, i) => (
             <ModuleItem key={mod.tag} mod={mod} index={i} />

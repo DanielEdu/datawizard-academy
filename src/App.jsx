@@ -7,6 +7,7 @@ import Curriculum from './components/Curriculum'
 import Methodology from './components/Methodology'
 import ForWho from './components/ForWho'
 import Instructors from './components/Instructors'
+import Schedule from './components/Schedule'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
 import CTAFinal from './components/CTAFinal'
@@ -26,6 +27,7 @@ export default function App() {
         <Methodology />
         <ForWho />
         <Instructors />
+        <Schedule />
         <Pricing />
         <FAQ />
         <CTAFinal />
