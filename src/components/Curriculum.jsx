@@ -198,6 +198,18 @@ const modules = [
     ],
   },
   {
+    track: 'Microsoft Fabric',
+    trackColor: FABRIC,
+    icon: BookOpen,
+    color: FABRIC,
+    tag: 'Fabric · Cierre',
+    title: 'Proyecto final y defensa de arquitectura RetailPe',
+    sessionCount: 1,
+    sessions: [
+      { n: 'F17', title: 'Defensa de arquitectura RetailPe end-to-end', type: 'Evaluación + Demo', note: 'Portafolio listo para entrevistas' },
+    ],
+  },
+  {
     track: 'Databricks',
     trackColor: DATABRICKS,
     icon: Puzzle,
@@ -380,9 +392,8 @@ export default function Curriculum() {
             44 sesiones, <span className="gradient-text">un sistema completo</span>
           </h2>
           <p className="text-slate-400 text-base max-w-2xl mx-auto">
-            Dos tracks en paralelo — cada semana combinas Databricks y Microsoft Fabric
-            sobre el mismo proyecto integrador{' '}
-            <span className="text-white font-semibold">RetailPe</span>.
+            Dos tracks en paralelo — Databricks y Microsoft Fabric,
+            cada uno con su propio proyecto integrador de producción.
           </p>
 
           {/* Track pills */}

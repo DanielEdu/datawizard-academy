@@ -36,10 +36,10 @@ const instructors = [
     location: 'Perú 🇵🇪',
     initials: 'HL',
     bio: 'Ingeniero de datos especializado en el ecosistema Microsoft: Fabric, Azure, Power BI y Databricks. Ponente activo en la comunidad Data Wizard, donde ha dado sesiones sobre Microsoft Foundry, agentes inteligentes y las últimas actualizaciones de Microsoft Fabric en producción. Apasionado por conectar Data Engineering e IA.',
-    certs: [
-      'Microsoft Azure Certified',
-      'Power BI Specialist',
-      'Microsoft Fabric Data Engineer',
+    highlights: [
+      'Especialista en Microsoft Fabric y arquitectura OneLake',
+      'Implementación de pipelines end-to-end en Azure',
+      'Referente en Power BI avanzado y gobierno de datos en Fabric',
     ],
     tags: ['Microsoft Fabric', 'Azure', 'Power BI', 'Databricks', 'Python', 'SQL'],
     linkedin: 'https://www.linkedin.com/in/heloal/',
@@ -94,17 +94,33 @@ function InstructorCard({ instructor, index }) {
         {/* Bio */}
         <p className="text-slate-400 text-sm leading-relaxed flex-1">{instructor.bio}</p>
 
-        {/* Certifications */}
+        {/* Certs or highlights */}
         <div>
-          <p className="text-xs text-slate-600 uppercase tracking-widest font-semibold mb-2">Certificaciones</p>
-          <ul className="space-y-1.5">
-            {instructor.certs.map((cert) => (
-              <li key={cert} className="flex items-center gap-2 text-slate-300 text-xs">
-                <Award className="w-3.5 h-3.5 shrink-0" style={{ color }} />
-                {cert}
-              </li>
-            ))}
-          </ul>
+          {instructor.certs ? (
+            <>
+              <p className="text-xs text-slate-600 uppercase tracking-widest font-semibold mb-2">Certificaciones</p>
+              <ul className="space-y-1.5">
+                {instructor.certs.map((cert) => (
+                  <li key={cert} className="flex items-center gap-2 text-slate-300 text-xs">
+                    <Award className="w-3.5 h-3.5 shrink-0" style={{ color }} />
+                    {cert}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <>
+              <p className="text-xs text-slate-600 uppercase tracking-widest font-semibold mb-2">Especialidad</p>
+              <ul className="space-y-1.5">
+                {instructor.highlights.map((h) => (
+                  <li key={h} className="flex items-center gap-2 text-slate-300 text-xs">
+                    <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ background: color }} />
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
 
         {/* Tags */}

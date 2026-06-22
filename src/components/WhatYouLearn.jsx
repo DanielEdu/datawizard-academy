@@ -1,64 +1,64 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import {
-  Layers, Zap, Database, GitBranch, Activity,
-  Shield, Rocket, Brain, Grid3x3
+  Layers, Zap, Database, Activity,
+  Shield, Brain, Grid3x3, BarChart3
 } from 'lucide-react'
 
 const pillars = [
   {
     icon: Layers,
     title: 'Patrones de diseño',
-    desc: 'Metadata-driven ingestion, idempotencia, SCD Tipo 2, MERGE patterns y diseño de pipelines tolerantes a fallos.',
+    desc: 'Metadata-driven ingestion, idempotencia, SCD Tipo 2, MERGE patterns y pipelines tolerantes a fallos — aplicados en ambas plataformas.',
     color: '#F4B942',
   },
   {
-    icon: Zap,
-    title: 'Ingesta de datos',
-    desc: 'JDBC, Kafka, CDC, Azure Data Factory, Autoloader. Todos los patrones reales de ingesta.',
-    color: '#00A3FF',
-  },
-  {
-    icon: Activity,
-    title: 'Apache Spark',
-    desc: 'Desde fundamentos hasta optimización avanzada. DataFrames, SQL, tuning, AQE.',
-    color: '#00A3FF',
-  },
-  {
     icon: Database,
-    title: 'Delta Lake',
-    desc: 'ACID, Time Travel, Merge, Schema Evolution. Patrones de diseño de tablas Delta.',
-    color: '#7B2FBE',
+    title: 'Lakehouse con Delta Lake',
+    desc: 'ACID, Time Travel, Merge, Schema Evolution y arquitectura Medallion desde cero en Databricks.',
+    color: '#00A3FF',
+  },
+  {
+    icon: Grid3x3,
+    title: 'Microsoft Fabric de punta a punta',
+    desc: 'OneLake, Lakehouses, Pipelines de datos, Notebooks Spark y Direct Lake. 17 sesiones dedicadas.',
+    color: '#00B294',
   },
   {
     icon: Activity,
-    title: 'Streaming e Incremental',
-    desc: 'Structured Streaming, DLT, procesamiento incremental y patrones de baja latencia.',
+    title: 'Apache Spark real',
+    desc: 'DataFrames, Spark SQL, optimización avanzada, AQE y tuning de producción en Databricks.',
+    color: '#00A3FF',
+  },
+  {
+    icon: Zap,
+    title: 'Orquestación y CI/CD',
+    desc: 'Databricks Asset Bundles, pipelines de despliegue y promoción de ambientes DEV/STG/PROD en Fabric y Databricks.',
+    color: '#F4B942',
+  },
+  {
+    icon: Activity,
+    title: 'Streaming de datos',
+    desc: 'Structured Streaming en Databricks y Eventstream + KQL en Microsoft Fabric para análisis en tiempo real.',
     color: '#7B2FBE',
   },
   {
     icon: Shield,
-    title: 'Unity Catalog & Gobierno',
-    desc: 'Control de acceso, linaje de datos, secrets, políticas de seguridad y cumplimiento.',
+    title: 'Gobierno y seguridad',
+    desc: 'Unity Catalog en Databricks y Sensitivity Labels, RLS, OLS y Endorsement en Microsoft Fabric.',
     color: '#F4B942',
   },
   {
-    icon: GitBranch,
-    title: 'CI/CD y Asset Bundles',
-    desc: 'Pipelines de despliegue, Databricks Asset Bundles, automatización y buenas prácticas DevOps.',
-    color: '#00A3FF',
+    icon: BarChart3,
+    title: 'Power BI sobre Fabric',
+    desc: 'Modelado dimensional, Star Schema, Gold en Direct Lake y dashboards seguros sobre datos de producción.',
+    color: '#00B294',
   },
   {
     icon: Brain,
     title: 'IA sobre el Lakehouse',
-    desc: 'Genie, RAG sobre datos propios, integración con modelos de lenguaje desde el Lakehouse.',
+    desc: 'Genie Spaces, RAG sobre datos propios y desarrollo asistido con Claude Code desde el Lakehouse.',
     color: '#7B2FBE',
-  },
-  {
-    icon: Grid3x3,
-    title: 'Microsoft Fabric End-to-End',
-    desc: '17 sesiones dedicadas. Proyecto RetailPe completo: ingesta, transformación y visualización.',
-    color: '#F4B942',
   },
 ]
 
