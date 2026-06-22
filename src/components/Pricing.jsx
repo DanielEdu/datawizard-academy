@@ -7,11 +7,11 @@ const CTA_URL = 'https://tally.so/r/b5g4d6'
 const includes = [
   '44 sesiones en vivo (132 horas reales de formación)',
   '2 docentes especializados por plataforma',
-  'Proyecto integrador end-to-end (RetailPe)',
+  'Sesión 1:1 para impulsar tu perfil profesional',
   'Acceso a comunidad Data Wizard',
   'Grabaciones de cada sesión para repaso',
   'Canal dedicado en Discord',
-  'Networking presencial de integración al final del curso',
+  'Sesión de networking en vivo como cierre de curso',
 ]
 
 export default function Pricing() {
