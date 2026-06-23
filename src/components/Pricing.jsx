@@ -86,11 +86,12 @@ export default function Pricing() {
               </div>
 
               {/* Installments */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
+              <div className="inline-flex flex-col gap-1 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-slate-300 text-sm">
-                  o <span className="text-white font-bold">3 cuotas de $108 USD</span>
-                  <span className="text-slate-400 ml-1">(S/. 360 c/u)</span>
+                  o <span className="text-white font-bold">3 cuotas de $110 USD</span>
+                  <span className="text-slate-400 ml-1">(S/. 362 c/u)</span>
                 </span>
+                <span className="text-slate-500 text-xs">Incluye 5% de recargo por pago en cuotas</span>
               </div>
             </div>
 
