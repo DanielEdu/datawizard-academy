@@ -22,13 +22,22 @@ export default function Schedule() {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="rounded-2xl border border-white/8 bg-white/2 p-8"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-9 h-9 rounded-xl bg-[#00A3FF]/10 border border-[#00A3FF]/20 flex items-center justify-center">
-              <Calendar className="w-4 h-4 text-[#00A3FF]" />
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-xl bg-[#00A3FF]/10 border border-[#00A3FF]/20 flex items-center justify-center">
+                <Calendar className="w-4 h-4 text-[#00A3FF]" />
+              </div>
+              <div>
+                <h3 className="font-extrabold text-white text-xl">Frecuencia de clases</h3>
+                <p className="text-slate-500 text-sm">3 sesiones por semana · GMT-5 · Perú / Colombia / Ecuador</p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-extrabold text-white text-xl">Frecuencia de clases</h3>
-              <p className="text-slate-500 text-sm">3 sesiones por semana · GMT-5 · Perú / Colombia / Ecuador</p>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#F4B942]/10 border border-[#F4B942]/25 shrink-0">
+              <span className="text-lg">🗓️</span>
+              <div>
+                <p className="text-[#F4B942] text-xs font-bold uppercase tracking-wide">Inicio de cohorte</p>
+                <p className="text-white font-extrabold text-sm">1 de agosto, 2026</p>
+              </div>
             </div>
           </div>
 
