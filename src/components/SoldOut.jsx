@@ -42,11 +42,15 @@ export default function SoldOut() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-[0.95] tracking-tighter mb-6"
+          className="text-7xl sm:text-8xl md:text-[7rem] font-black leading-[0.9] tracking-tighter mb-6"
+          style={{
+            background: 'linear-gradient(135deg, #00A3FF 0%, #7B2FBE 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+          }}
         >
-          ¡Los cupos de la{' '}
-          <span className="text-[#F4B942]">1ra cohorte</span>
-          {' '}se agotaron!
+          SOLD OUT
         </motion.h1>
 
         {/* Message */}
