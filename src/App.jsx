@@ -13,8 +13,11 @@ import FAQ from './components/FAQ'
 import CTAFinal from './components/CTAFinal'
 import Footer from './components/Footer'
 import FloatingCTA from './components/FloatingCTA'
+import SoldOut from './components/SoldOut'
 
 export default function App() {
+  if (window.location.pathname === '/sold-out') return <SoldOut />
+
   return (
     <>
       <Navbar />
