@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aforo Completo — Data Wizard Academy</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0D1117;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .glow {
+      position: fixed; inset: 0; pointer-events: none; overflow: hidden;
+    }
+    .glow::before {
+      content: '';
+      position: absolute;
+      top: 30%; left: 50%; transform: translate(-50%, -50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(244,185,66,0.07) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .glow::after {
+      content: '';
+      position: absolute;
+      top: 55%; left: 30%;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(0,163,255,0.05) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .container {
+      position: relative; z-index: 1;
+      max-width: 640px; width: 100%;
+      text-align: center;
+    }
+    .logo {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0.75rem; margin-bottom: 2.5rem;
+    }
+    .logo img { width: 40px; height: 40px; object-fit: contain; }
+    .logo span { font-weight: 700; font-size: 1.1rem; color: #fff; letter-spacing: 0.02em; }
+    .badge {
+      display: inline-block;
+      border: 2px solid #F4B942; color: #F4B942;
+      font-weight: 900; font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase;
+      padding: 0.4rem 1.5rem; border-radius: 9999px;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      font-weight: 900; line-height: 1;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+    }
+    h1 .gold { color: #F4B942; }
+    p { color: #94a3b8; line-height: 1.7; margin-bottom: 1rem; font-size: 1.05rem; }
+    p strong { color: #fff; }
+    .cta {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      margin-top: 1rem; margin-bottom: 2.5rem;
+      padding: 1rem 2rem; border-radius: 1rem;
+      background: linear-gradient(135deg, #F4B942, #e0a832);
+      color: #0D1117; font-weight: 800; font-size: 1rem;
+      text-decoration: none; transition: opacity 0.2s;
+    }
+    .cta:hover { opacity: 0.9; }
+    .divider {
+      display: flex; align-items: center; gap: 1rem;
+      margin-bottom: 1.5rem; color: #334155; font-size: 0.875rem;
+    }
+    .divider::before, .divider::after {
+      content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.06);
+    }
+    .links {
+      display: flex; align-items: center; justify-content: center;
+      gap: 1.5rem; flex-wrap: wrap;
+    }
+    .links a {
+      color: #64748b; text-decoration: none; font-size: 0.9rem;
+      display: flex; align-items: center; gap: 0.4rem;
+      transition: color 0.2s;
+    }
+    .links a:hover { color: #fff; }
+    .links .dot { color: #1e293b; }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="container">
+    <div class="logo">
+      <img src="/datawizard.png" alt="Data Wizard" onerror="this.style.display='none'" />
+      <span>Data Wizard Academy</span>
+    </div>
+
+    <div class="badge">Aforo completo</div>
+
+    <h1>¡Los cupos de la <span class="gold">1ra cohorte</span> se agotaron!</h1>
+
+    <p>Gracias por la increíble acogida. No esperábamos llenar el aforo tan rápido — eso dice mucho de la comunidad Data Wizard.</p>
+
+    <p>Ya estamos planeando la <strong>2da cohorte</strong>. Si quieres ser el primero en enterarte cuando abran los cupos, únete al Discord.</p>
+
+    <a class="cta" href="https://discord.gg/bzH8Pjajv6" target="_blank" rel="noopener noreferrer">
+      Únete al Discord · Avísame para la 2da cohorte
+    </a>
+
+    <div class="divider">mientras tanto</div>
+
+    <div class="links">
+      <a href="https://www.youtube.com/@datawizardpe" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+      <span class="dot">·</span>
+      <a href="https://linkedin.com/company/data-wizard-club/" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <span class="dot">·</span>
+      <a href="https://daniel-datashow.vercel.app/es" target="_blank" rel="noopener noreferrer">
+        Daniel DataShow
+      </a>
+    </div>
+  </div>
+</body>
+</html>
