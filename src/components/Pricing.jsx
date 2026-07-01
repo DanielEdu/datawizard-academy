@@ -70,26 +70,19 @@ export default function Pricing() {
 
             {/* Price */}
             <div className="mb-8">
-              {/* Oferta tiempo limitado */}
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-slate-500 line-through text-2xl font-bold">$350</span>
-                <span className="px-2.5 py-0.5 rounded-full bg-[#F4B942]/15 border border-[#F4B942]/30 text-[#F4B942] text-xs font-bold tracking-wide">
-                  10% OFF · hasta el 1 jul
-                </span>
-              </div>
               <div className="flex items-baseline gap-3 mb-2">
-                <span className="text-5xl sm:text-6xl font-extrabold text-white">$315</span>
+                <span className="text-5xl sm:text-6xl font-extrabold text-white">$350</span>
                 <span className="text-xl text-slate-400">USD</span>
               </div>
               <div className="text-slate-400 text-sm mb-3">
-                o equivalente <span className="text-white font-semibold">S/. 1,035</span> (soles peruanos)
+                o equivalente <span className="text-white font-semibold">S/. 1,150</span> (soles peruanos)
               </div>
 
               {/* Installments */}
               <div className="inline-flex flex-col gap-1 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
                 <span className="text-slate-300 text-sm">
-                  o <span className="text-white font-bold">3 cuotas de $110 USD</span>
-                  <span className="text-slate-400 ml-1">(S/. 362 c/u)</span>
+                  o <span className="text-white font-bold">3 cuotas de $123 USD</span>
+                  <span className="text-slate-400 ml-1">(S/. 403 c/u)</span>
                 </span>
                 <span className="text-slate-500 text-xs">Incluye 5% de recargo por pago en cuotas</span>
               </div>
