@@ -105,6 +105,7 @@ const arequipaLineup = [
   {
     time: '4:40 – 5:20',
     speaker: 'Jorge Muchaypiña',
+    secret: true,
     tema: 'Gobernanza Inteligente de Datos e IA con Microsoft Fabric',
     rubro: 'Data Driven Specialist',
     linkedin: 'https://www.linkedin.com/in/jorge-michael-muchaypi%C3%B1a-gutierrez-79038491/',
@@ -113,6 +114,7 @@ const arequipaLineup = [
   {
     time: '5:20 – 6:00',
     speaker: 'Frank Chambillo',
+    secret: true,
     tema: 'Diseñando una plataforma moderna de datos en Azure con Microsoft Fabric',
     rubro: 'Data Architect',
     linkedin: 'https://www.linkedin.com/in/frankchambillo/',
@@ -121,6 +123,7 @@ const arequipaLineup = [
   {
     time: '6:00 – 6:40',
     speaker: 'Juan Rafael',
+    secret: true,
     tema: 'Cree aplicaciones de IA escalables con Azure SQL Database Hyperscale',
     rubro: 'Sr ESE - CRM Solutions',
     linkedin: 'https://www.linkedin.com/in/juanrafael/',
@@ -152,6 +155,29 @@ function LineupItem({ item }) {
   }
 
   const color = RUBRO_COLORS[item.rubro] || '#00A3FF'
+
+  if (item.secret) {
+    return (
+      <div className="rounded-xl border border-white/8 bg-white/3 overflow-hidden">
+        <div className="px-5 py-4 flex items-start gap-4">
+          <span className="text-slate-500 text-xs font-semibold whitespace-nowrap pt-1 w-20 shrink-0">{item.time}</span>
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2 flex-wrap mb-0.5">
+              <span className="text-[#F4B942] font-bold text-sm">🔒 Speaker por revelar</span>
+              <span
+                className="text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wide"
+                style={{ background: `${color}15`, color, border: `1px solid ${color}30` }}
+              >
+                {item.rubro}
+              </span>
+            </div>
+            <p className="text-slate-400 text-sm leading-snug">{item.tema}</p>
+            <p className="text-slate-600 text-xs italic mt-1">Muy pronto anunciamos a este expositor 👀</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="rounded-xl border border-white/8 bg-white/3 overflow-hidden">
