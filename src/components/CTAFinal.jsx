@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
-const CTA_URL = '/sold-out'
+const CTA_URL = '/academy/soldout'
 
 export default function CTAFinal() {
   const ref = useRef(null)

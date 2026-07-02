@@ -5,7 +5,7 @@ import fabricImg from '../assets/logos/fabric.png'
 import azureImg from '../assets/logos/azure.png'
 import logoImg from '../assets/datawizard.png'
 
-const CTA_URL = '/sold-out'
+const CTA_URL = '/academy/soldout'
 
 const badges = [
   { icon: Calendar, value: '4',   label: 'meses',            color: '#F4B942' },

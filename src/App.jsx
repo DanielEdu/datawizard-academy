@@ -14,10 +14,12 @@ import CTAFinal from './components/CTAFinal'
 import Footer from './components/Footer'
 import FloatingCTA from './components/FloatingCTA'
 import SoldOut from './components/SoldOut'
+import CommunityHome from './components/CommunityHome'
+import Eventos from './components/Eventos'
 
-export default function App() {
-  if (window.location.pathname === '/sold-out') return <SoldOut />
+const DATASHOW_URL = 'https://daniel-datashow.vercel.app/es'
 
+function Academy() {
   return (
     <>
       <Navbar />
@@ -39,4 +41,18 @@ export default function App() {
       <FloatingCTA />
     </>
   )
+}
+
+export default function App() {
+  const path = window.location.pathname.replace(/\/+$/, '') || '/'
+
+  if (path === '/academy') return <Academy />
+  if (path === '/academy/soldout' || path === '/sold-out') return <SoldOut />
+  if (path === '/eventos') return <Eventos />
+  if (path === '/danieldatashow') {
+    window.location.replace(DATASHOW_URL)
+    return null
+  }
+
+  return <CommunityHome />
 }

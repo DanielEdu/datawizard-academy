@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Check, ArrowRight, Zap } from 'lucide-react'
 
-const CTA_URL = '/sold-out'
+const CTA_URL = '/academy/soldout'
 
 const includes = [
   '44 sesiones en vivo (132 horas reales de formación)',

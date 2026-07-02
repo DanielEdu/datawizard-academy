@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
-const CTA_URL = '/sold-out'
+const CTA_URL = '/academy/soldout'
 
 export default function FloatingCTA() {
   const [visible, setVisible] = useState(false)

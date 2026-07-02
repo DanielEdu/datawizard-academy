@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import logoImg from '../assets/datawizard.png'
 
-const CTA_URL = '/sold-out'
+const CTA_URL = '/academy/soldout'
 
 const links = [
   { label: 'Programa', href: '#curriculum' },
